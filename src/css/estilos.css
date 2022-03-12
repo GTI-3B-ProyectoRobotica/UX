@@ -1,0 +1,418 @@
+/*=========================================================================================*/
+/*
+Nombre archivo: estilos.css
+Autor: Lorena Ioana Pricop Florescu
+Fecha: 11/03/2022
+*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+*{
+    box-sizing:border-box;
+    font-family: 'Overpass', sans-serif;
+}
+/*=========================================================================================*/
+/*Body*/
+/*=========================================================================================*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: white; 
+	line-height: 1.5em;
+}
+.header{
+    background:rgb(50, 50, 50);
+    display: flex;
+    height: 12.5vh;
+}
+.contenedorEnlaces{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 95%;
+}
+/*=========================================================================================*/
+/*Logo header*/
+/*=========================================================================================*/
+header .linkLogo{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.logo-header{
+	text-decoration: none;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color:#f28500;
+}
+.logo-header:hover {
+	color: #f28500;
+}
+/*=========================================================================================*/
+/*Nav*/
+/*=========================================================================================*/
+.nav{
+    margin-left: 3rem;
+    border-left: 3px white solid;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    margin: 0;
+	padding: 0;
+	list-style: none;
+	padding-right: 20px;
+    margin-left: 2rem;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+	padding: 0 10px;
+	text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    align-items: center;
+}
+nav ul li a:hover {
+    color: #f28500;
+    font-weight: bold;
+}
+/*=========================================================================================*/
+/*Boton contactar y productos*/
+/*=========================================================================================*/
+.contenedorBotonContactar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.botonContactar{
+    margin-right: 2rem;
+    height: 3rem;
+    width: 15rem;
+    font-size: 20px;
+    background-color: #f28500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+.botonContactar:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/*=========================================================================================*/
+/*Main*/
+/*=========================================================================================*/
+.contenedorImagen{
+    background-image: url("../recursos/fondoLanding.png");
+    background-size: cover;
+    height: 80.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenidoMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-grande{
+    width: 40rem;
+    height: 30rem;
+}
+.textoDeReclamo{
+    color: black;
+}
+.botonProductos{
+    height: 3.5rem;
+    width: 20rem;
+    font-size: 20px;
+    background-color: #f28500;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+.botonProductos:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.precio {
+    text-align: right;
+    font-size: 30px;
+}
+/*=========================================================================================*/
+/*Flecha Hacia Abajo */
+/*=========================================================================================*/
+.flechaHaciaAbajo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;
+    height: 7vh;
+}
+/*=========================================================================================*/
+/*Texto de explicacion*/
+/*=========================================================================================*/
+.contenedorDeExplicacion{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2px 16px;
+    font-size: 22px;
+}
+.textoPrincipal{
+    text-align: justify;
+}
+.contenedorTarjetasExplicacion{
+    margin-top: 5rem;
+    display: flex;
+    justify-content:center;
+}
+.contenedorTarjetas{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 5px;
+}
+.contenedorTarjetas:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.contenedorTarjetas2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 5px;
+    margin-left: 5rem;
+}
+.contenedorTarjetas2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.containerTarjeta{
+    padding: 2px 16px;
+}
+
+#contenedorTarjetas h4{
+    font-size: 36px;
+}
+
+/*=========================================================================================*/
+/*carrusel*/
+/*=========================================================================================*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: 3rem;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*=========================================================================================*/
+/*contenedorImagen1*/
+/*=========================================================================================*/
+
+.contenidoImagenes1{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    width: 100%;
+}
+
+.textoImagen1{
+
+    width: 100%;
+    font-size: 24px;
+    line-height: 2rem;
+    text-align: justify;
+    margin-right: 5rem;
+}
+
+.imagenCuadrada1{
+    width: 40rem;
+    height: 30rem;
+}
+
+/*=========================================================================================*/
+/*contenedorImagen2*/
+/*=========================================================================================*/
+
+.contenidoImagenes2{
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    width: 100%;
+}
+
+.imagenesAbajo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.imagenLarga{
+    width: 100%;
+    height: 20rem;
+}
+
+.textoImagenes2{
+    width: 100%;
+    font-size: 24px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.imagenCuadrada{
+    width: 40rem;
+    height: 40rem;
+}
+
+/*=========================================================================================*/
+/*contenedorStandarPlan*/
+/*=========================================================================================*/
+.contenedorStandarPlan{
+    margin-top: 2rem;
+    background-image: url("../recursos/StandarPlanFondo.jpg");
+    background-size: cover;
+    display: flex;
+    height: 30rem;
+}
+.contenidoDeStandarPlan{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.tituloStandarPlan{
+    font-size: 50px;
+    color: white;
+}
+.subTituloStandarPlan{
+    font-size: 22px;
+    color: white;
+}
+/*=========================================================================================*/
+/*footer*/
+/*=========================================================================================*/
+footer{
+    background:rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+    justify-content: start;
+    flex-basis: 80%;
+    color: black;
+}
+
+footer .linkLogo{
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+.contenedorFooter{
+    margin-left: 3rem;
+    border-left: 3px black solid;
+}
+.nombreEmpresa{
+    margin-left: 2rem;
+}
+
+#userIcon {
+    width: 2rem;
+    margin-right: 2rem;
+}
