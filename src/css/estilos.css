@@ -110,7 +110,7 @@ nav ul li a:hover {
 /*Main*/
 /*=========================================================================================*/
 .contenedorImagen{
-    background-image: url("../recursos/fondoLanding.png");
+    background-image: url("../recursos/fondo.png");
     background-size: cover;
     height: 80.5vh;
     display: flex;
@@ -125,7 +125,8 @@ nav ul li a:hover {
     flex-direction: column;
 }
 .logo-grande{
-    width: 50rem;
+    margin-top: -15rem;
+    width: 55rem;
     height: 30rem;
 }
 .textoDeReclamo{
@@ -162,9 +163,8 @@ nav ul li a:hover {
 /*Texto de explicacion*/
 /*=========================================================================================*/
 .contenedorDeExplicacion{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 2px 16px;
+    margin-left: 10rem;
+    margin-right: 10rem;
     font-size: 22px;
 }
 .textoPrincipal{
@@ -207,12 +207,15 @@ nav ul li a:hover {
 /*=========================================================================================*/
 
 * {box-sizing:border-box}
-
+.carrusel{
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
-  margin: 3rem;
 }
 
 /* Hide the images by default */
@@ -305,11 +308,10 @@ nav ul li a:hover {
 /*=========================================================================================*/
 /*contenedorImagen1*/
 /*=========================================================================================*/
-
 .contenidoImagenes1{
     display: flex;
     flex-direction: row;
-    padding: 5rem;
+    padding: 10rem;
     width: 100%;
 }
 
@@ -323,7 +325,7 @@ nav ul li a:hover {
 }
 
 .imagenCuadrada1{
-    width: 40rem;
+    width: 28rem;
     height: 30rem;
 }
 
@@ -334,7 +336,7 @@ nav ul li a:hover {
 .contenidoImagenes2{
     display: flex;
     flex-direction: row;
-    padding: 5rem;
+    padding: 10rem;
     width: 100%;
 }
 
@@ -347,7 +349,7 @@ nav ul li a:hover {
 
 .imagenLarga{
     width: 100%;
-    height: 20rem;
+    height: 25rem;
 }
 
 .textoImagenes2{
@@ -358,7 +360,7 @@ nav ul li a:hover {
 }
 
 .imagenCuadrada{
-    width: 40rem;
+    width: 30rem;
     height: 40rem;
 }
 
@@ -367,7 +369,7 @@ nav ul li a:hover {
 /*=========================================================================================*/
 .contenedorStandarPlan{
     margin-top: 2rem;
-    background-image: url("../recursos/StandarPlanFondo.jpg");
+    background-image: url("../recursos/fondo2.png");
     background-size: cover;
     display: flex;
     height: 30rem;
@@ -375,8 +377,8 @@ nav ul li a:hover {
 .contenidoDeStandarPlan{
     display: flex;
     flex-direction: column;
+    margin-left: 10rem;
     margin-top: 5rem;
-    margin-left: 5rem;
 }
 .tituloStandarPlan{
     font-size: 50px;
@@ -410,9 +412,4 @@ footer .linkLogo{
 }
 .nombreEmpresa{
     margin-left: 2rem;
-}
-
-#userIcon {
-    width: 2rem;
-    margin-right: 2rem;
 }
