@@ -1,0 +1,221 @@
+
+<!-- Página de la landing page de AutomatiX
+    Nombre del archivo: index.html
+    Autor: Lorelay Pricop Florescu
+    Fecha: 14/03/2022
+  -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutomatiX</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Cabezera de la pagina con imagenes y links -->
+    <header class="header">
+        <a class="linkLogo" href="index.html"><img class="logo-header" src="recursos/logoAutomatiX.png" alt="Logo AutomatiX"/></a>
+        <div class="contenedorEnlaces">
+            <div class="contenedorDiv">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Nuestros productos</a></li>
+                        <li><a href="contactar.html">Contacta con nosotros</a></li>
+                        <li><a href="#quienesSomos">¿Quienes somos?</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del reclamo de la pagina web -->
+
+    <main class="contenedorImagen">
+        <div class="contenidoMain">
+            <img class="logo-grande" src="recursos/WallpaperAutomatiXBlanco.png" alt="Imagen Principal AutomatiX"/>
+            <h1 class="textoDeReclamo">Descubre la revolución robótica de las industrias</h1>
+            <button class="botonProductos" onclick="location.href = '#contenedorTarjetas'">Descubre nuestros productos</button>
+        </div>
+    </main>
+
+    <a href="#contenedorTarjetas"><img class="flechaHaciaAbajo" src="recursos/flecha.png" alt="Flecha hacia abajo" ></a>
+
+
+    <!-- Contenedor de las tarjetas de los planes de los productos-->
+    <section class="contenedorDeExplicacion">
+        
+        <div id="contenedorTarjetas" class="contenedorTarjetasExplicacion">
+
+            <div class="contenedorTarjetas">
+                <img src="recursos/turtlebot3-burger.jpg" alt="Avatar" style="width:100%">
+                <div class="containerTarjeta">
+                    <h4><b>Standard Plan</b></h4> 
+                    <p>El plan estandar está diseñado para las pequeñas empresas con necesidades básicas, que deseen dar el salto a la era digital</p> 
+                    
+                </div>  
+                <div class="contenedorBotonContactar">
+                    <p class="precio">200.00€</p>
+                    <button class="botonContactar" onclick="location.href = 'contactar.html'">Contacta</button>
+                    
+                </div>
+            </div>
+            
+            <div class="contenedorTarjetas contenedorTarjetas2">
+                <img src="recursos/robotAlmacen.jpg" alt="Avatar" style="width:100%">
+                <div class="containerTarjeta">
+                    <h4><b>Personalized Plan</b></h4> 
+                    <p>El plan personalizado es para las empresas que necesiten robots AutomatiX con funcionalidades específicas
+                        el precio dependerá de la complejidad.
+                    </p> 
+                    
+                  </div>
+                  <div class="contenedorBotonContactar">
+                    <p class="precio">Desde 300.00€</p>
+                    <button class="botonContactar" onclick="location.href = 'contactar.html'">Contacta</button>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Carrusel de imagenes -->
+    <section class="carrusel">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="recursos/image-0.1.10.webp" style="width:100%; height:50rem">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="recursos/istockphoto-1204031773-640x640.jpg" style="width:100%; height:50rem">
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="recursos/Magazino-TORU-Cube-IV_1.jpg" style="width:100%; height:50rem">
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </section>
+
+
+    <!-- Contiene titulo, texto de quienes somos y una imagen -->
+    <section id="quienesSomos" class="contenedorQuienesSomos">
+        <div class="contenidoQuienesSomos">
+              
+            <div class="textoQuienesSomos">
+                <h1>¿Quienes somos?</h1>
+                <p>
+                    Desarrollamos plataformas customizables, a medida y modulares que se ajustan a las necesidades de una gran variedad de sectores. 
+                    Diseñamos y fabricamos soluciones altamente integradas y confiables para el sector servicios e industrial, así como para instituciones de investigación de referencia a nivel mundial.
+                    <br>
+                    AutomatiX comenzó en 2020, cuando un pequeño grupo de ingenieros construyó el primer robot humanoide bípedo completamente autónomo de Europa. 
+                    Contamos con un equipo con más de 15 años de experiencia en I+D, hoy somos conocidos por nuestros robots móviles que se usan en investigación, tareas de intralogística, 
+                    automatización de inventario y aplicaciones sociales para empresas, instituciones y laboratorios de I+D de todo el mundo.  </p></div>
+            
+            <div>
+                <img class="imagenQuienesSomos" src="recursos/quienessomos.jpg" alt="Foto cuadrada">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contiene titulo de Standard Plan, texto, imagen y botón de contactar -->
+    <section class="contenedorStandarPlan">
+        <div class="contenidoDeStandarPlan">  
+            <h1 class="tituloStandarPlan">Standard Plan</h1>
+            <p class="subTituloStandarPlan">Para satisfacer las necesidades básicas y dar el paso a la digitalización</p>
+    
+            <div>
+                <button class="botonContactar" onclick="location.href = 'contactar.html'">Contacta</button>
+                
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- Sección que contiene dos imagenes y el texto de nuestro objetivo -->
+
+    <section class="contenedorNuestroObjetivo">
+        <div class="contenidoNuestroObjetivo">
+            <div>
+                <img class="imagenNuestroObjetivo" src="recursos/Business-Robots-Workers-Shortage-1235434266.png" alt="Foto cuadrada">
+            </div>
+            <div class="imagenesAbajo">
+                <div><img class="imagenLarga" src="recursos/photo-of-machines-at-a-staples-denver-facility.webp" alt="Foto"></div>
+                
+                <div class="textoNuestroObjetivo">
+                <h1>Nuestro objetivo</h1>
+                <p>AutomatiX se compromete a iniciar el salto a la era digital gracias a los nuevos robots inteligentes tratando de robotizar el trabajo industrial.
+                Queremos favorecer a las empresas con más rápidez y, a la vez, proteger a los trabajadores de los posibles incidentes en los almacenes.
+                <br>
+                Tratamos de satisfacer tanto las necesidades básicas para realizar tareas sencillas como las más complejas para tareas más exigentes
+                que necesiten una inteligencia artificial para su realización.
+                <br>
+                Podemos nombrar algunas ventajas de esta robotización: mayor precisión en las operativas, incremento de la productividad y eficacia, mayor seguridad  y posibilidad de colaboración con los operarios.
+                <br>
+                En definitiva, se trata de una de las estrategias más efectivas para cumplir el triple objetivo de reducir costes operacionales, mejorar la calidad del servicio y aumentar así la eficacia global de la instalación de almacenaje.
+                </p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de la pagina web -->
+    <footer>
+        <a class="linkLogo" href="index.html"><img class="logo-header" src="recursos/logoAutomatiX.png" alt="Logo AutomatiX"/></a>
+        <div class="contenedorFooter">
+            <p class="nombreEmpresa">AutomatiX &copy; 2022. Todos los derechos reservados</p>
+        </div>
+    </footer>
+    
+    <script src="logica/cookies.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
