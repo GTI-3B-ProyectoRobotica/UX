@@ -86,8 +86,8 @@ nav ul li a:hover {
 /*=========================================================================================*/
 
 button{
-    background: #fff; /* color de fondo */
-    color: #f28500; /* color de fuente */
+    background: #f28500; /* color de fondo */
+    color: #fff; /* color de fuente */
     border: 2px solid #f28500; /* tamaño y color de borde */
     padding: 0px;
     border-radius: 8px; /* redondear bordes */
@@ -108,7 +108,7 @@ button{
     height: 100%;
     top: 0;
     left: -50%;
-    background-color: #f28500; /* color de fondo hover */
+    background-color: #fff; /* color de fondo hover */
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -117,7 +117,7 @@ button{
     left: 100%;
   }
   button:hover {
-    color: #fff; /* color de fuente hover */
+    color: #f28500; /* color de fuente hover */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   button:hover:before {
