@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutomatiX</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a class="linkLogo" href="index.html"><img class="logo-header" src="src/logoAutomatiX.png"
+                alt="Logo AutomatiX" /></a>
+        <div class="contenedorEnlaces">
+            <div class="contenedorDiv">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Nuestros productos</a></li>
+                        <li><a href="contactar.html">Contacta con nosotros</a></li>
+                        <li><a href="#quienesSomos">¿Quienes somos?</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor">
+        <button class="boton" onclick="location.href = 'contactar.html'">Contacta</button>
+
+        <button class="botonBorrar" id="btnBorrar" onclick="location.href = 'contactar.html'">Borrar</button>
+
+        <h1>¿Quienes somos?</h1>
+
+        <p> Desarrollamos plataformas customizables, a medida y modulares que se ajustan a las necesidades de una gran
+            variedad de sectores. </p>
+
+        <table>
+            <tr>
+                <th> Nombre de la zona </th>
+                <th> Tipo de producto </th>
+                <th> Cantidad </th>
+                <th> Estado </th>
+                <th> Eliminar </th>
+            </tr>
+            <tr>
+                <td>Electronica</td>
+                <td>Memoria RAM</td>
+                <td>1000</td>
+                <td>En almacen</td>
+                <td class="deleteIconTd"><img src="src/icons8-delete.svg"></td>
+            </tr>
+            <tr>
+                <td>Electronica</td>
+                <td>Teclado</td>
+                <td>500</td>
+                <td>Llega 12/05/20</td>
+                <td class="deleteIconTd"><img src="src/icons8-delete.svg"></td>
+            </tr>
+        </table>
+
+        <div class="spinner"></div>
+    </div>
+
+    <footer>
+        <a class="linkLogo" href="index.html"><img class="logo-header" src="src/logoAutomatiX.png"
+                alt="Logo AutomatiX" /></a>
+        <div class="contenedorFooter">
+            <p class="nombreEmpresa">AutomatiX &copy; 2022. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
